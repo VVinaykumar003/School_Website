@@ -1,0 +1,180 @@
+/* App.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header (Navbar) */
+nav {
+  background-color: #3f51b5;
+  padding: 10px 20px;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* AppBar Styling */
+.MuiAppBar-root {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Links (Buttons) */
+.MuiButton-root {
+  text-transform: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.MuiButton-root.MuiButton-outlined {
+  border-radius: 25px;
+  border: 2px solid white;
+  padding: 6px 15px;
+}
+
+.MuiButton-root.MuiButton-outlined:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Container (Pages) */
+.Container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3f51b5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Card (for Content like Achievements, Notifications) */
+.card {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Button Styling (for Learn More and CTA) */
+button.learn-more {
+  background-color: #3f51b5;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button.learn-more:hover {
+  background-color: #303f9f;
+  transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 1.5rem;
+  }
+
+  .MuiButton-root {
+    font-size: 0.9rem;
+  }
+
+  .Container {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  button.learn-more {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Animation for Page Transition */
+.page-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+}
