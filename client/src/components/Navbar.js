@@ -51,7 +51,8 @@ const Navbar = () => {
             component={Link}
             to="/events"
             sx={{ marginRight: 2 }}
-          >Events
+          >
+            Events
           </Button>
         </Box>
 
