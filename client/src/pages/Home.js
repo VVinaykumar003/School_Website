@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react'
+import FacultyCards from '../components/faculty'
+import MissionVision from '../components/Mission'
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to the School Website</h1>
-      <p>Explore our achievements, notifications, and upcoming events!</p>
-    </div>
-  );
-};
+    <>
+    <FacultyCards />
+    <MissionVision />
+    </>
+  )
+}
 
-export default Home;
+export default Home
