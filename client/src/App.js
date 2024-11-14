@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Achievements from "./pages/Achievements";
 import Notifications from "./pages/Notifications";
+import Curriculum from "./pages/Curriculum";
 import Events from "./pages/Events";
 import NotFound from "./pages/NotFound";
 
@@ -26,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/achievements" element={<Achievements />} />
-          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/notifications" element={<Curriculum />} />
           <Route path="/events" element={<Events />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

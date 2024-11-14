@@ -5,7 +5,8 @@ const OurApproach = () => {
     <div style={styles.container}>
       <h2 style={styles.heading}>Extracurricular Activities</h2>
       <div style={styles.content}>
-        <div style={styles.imagePlaceholder}></div>
+        <div style={styles.imagePlaceholder}>
+        </div>
         <div style={styles.textContent}>
           <p style={styles.description}>
           We offer a wide range of extracurricular activities to enrich our students' educational experience and help them develop new skills:

@@ -76,8 +76,8 @@ const MissionVision = () => {
     <div style={styles.container}>
       <div style={styles.content}>
         <div style={styles.imageContainer}>
-          <img src="mission.png" alt="Classroom" style={styles.image} />
-          <img src="mission.png" alt="Classroom" style={styles.image} />
+          <img src="mission.jpg" alt="Classroom" style={styles.image} />
+          <img src="mission.jpg" alt="Classroom" style={styles.image} />
         </div>
         <div style={styles.textContainer}>
           <h2 style={styles.title}>Our Mission & Vision</h2>

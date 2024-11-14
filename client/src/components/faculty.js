@@ -3,18 +3,18 @@ import React from "react";
 const FacultyCards = () => {
   // Sample data for teachers, each with a placeholder image URL
   const teachers = [
-    { id: 1, name: "Dr. John Doe", subject: "Mathematics", image: "mission.png" },
-    { id: 2, name: "Dr. Jane Smith", subject: "Physics", image: "mission.png" },
-    { id: 3, name: "Dr. Albert Brown", subject: "Chemistry", image: "mission.png" },
-    { id: 4, name: "Dr. Linda White", subject: "Biology", image: "mission.png" },
-    { id: 5, name: "Dr. Emma Johnson", subject: "English", image: "mission.png" },
-    { id: 6, name: "Dr. Mark Wilson", subject: "Computer Science", image: "mission.png" },
-    { id: 7, name: "Dr. Sophia Green", subject: "History", image: "mission.png" },
-    { id: 8, name: "Dr. William Black", subject: "Geography", image: "mission.png" },
-    { id: 9, name: "Dr. Olivia Scott", subject: "Economics", image: "mission.png" },
-    { id: 10, name: "Dr. James Evans", subject: "Political Science", image:"mission.png" },
-    { id: 11, name: "Dr. Mia Taylor", subject: "Psychology", image: "mission.png" },
-    { id: 12, name: "Dr. Henry Moore", subject: "Philosophy", image: "mission.png" },
+    { id: 1, name: "Dr. John Doe", subject: "Mathematics", image: "mission.jpg" },
+    { id: 2, name: "Dr. Jane Smith", subject: "Physics", image: "mission.jpg" },
+    { id: 3, name: "Dr. Albert Brown", subject: "Chemistry", image: "mission.jpg" },
+    { id: 4, name: "Dr. Linda White", subject: "Biology", image: "mission.jpg" },
+    { id: 5, name: "Dr. Emma Johnson", subject: "English", image: "mission.jpg" },
+    { id: 6, name: "Dr. Mark Wilson", subject: "Computer Science", image: "mission.jpg" },
+    { id: 7, name: "Dr. Sophia Green", subject: "History", image: "mission.jpg" },
+    { id: 8, name: "Dr. William Black", subject: "Geography", image: "mission.jpg" },
+    { id: 9, name: "Dr. Olivia Scott", subject: "Economics", image: "mission.jpg" },
+    { id: 10, name: "Dr. James Evans", subject: "Political Science", image:"mission.jpg" },
+    { id: 11, name: "Dr. Mia Taylor", subject: "Psychology", image: "mission.jpg" },
+    { id: 12, name: "Dr. Henry Moore", subject: "Philosophy", image: "mission.jpg" },
   ];
 
   // Styles
@@ -33,7 +33,7 @@ const FacultyCards = () => {
 
   const cardStyle = {
     backgroundColor: "#FFFFFF",
-    border: "1px solid #ddd",
+    // border: "1px solid #ddd",
     borderRadius: "8px",
     width: "250px",
     padding: "20px",
