@@ -1,0 +1,78 @@
+/* Custom Carousel Styles */
+
+.custom-carousel {
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width for the carousel */
+  height: 450px; /* Fixed height for the carousel */
+  margin: auto; /* Center the carousel horizontally */
+  overflow: hidden; /* Ensure no overflow issues */
+}
+
+.custom-carousel .carousel-item {
+  max-height: 450px; /* Same as carousel height */
+}
+
+.custom-carousel img {
+  filter: brightness(70%);
+  object-fit: cover; /* Ensures the image covers the entire area, cropping excess parts */
+  height: 100%; /* Ensures the image fills the height of the carousel */
+  width: 100%; /* Ensures the image fills the width of the carousel */
+}
+
+.custom-caption {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 80%; /* Keeps captions centered with consistent width */
+  margin: 0 auto; /* Centers the caption horizontally */
+}
+
+.custom-caption h3 {
+  font-family: "Poppins", sans-serif; /* Modern, elegant font */
+  font-size: 3rem; /* Large headline */
+  font-weight: 700; /* Bold text */
+  color: #ffffff; /* Pure white text */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Strong text shadow for readability */
+  margin-bottom: 10px;
+}
+
+.custom-caption p {
+  font-family: "Roboto", sans-serif; /* Clean, readable font */
+  font-size: 1.5rem; /* Medium-sized description */
+  font-weight: 400; /* Normal weight */
+  color: #f0f0f0; /* Light gray for contrast */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Soft text shadow */
+  line-height: 1.8; /* Improves readability */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.carousel-indicators [data-bs-target].active {
+  background-color: #007bff;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .custom-carousel {
+    height: 300px; /* Adjust carousel height for smaller screens */
+  }
+
+  .custom-carousel .carousel-item {
+    max-height: 300px; /* Adjust carousel item height for smaller screens */
+  }
+
+  .custom-caption h3 {
+    font-size: 2rem; /* Adjust heading font size for smaller screens */
+  }
+
+  .custom-caption p {
+    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+  }
+}
