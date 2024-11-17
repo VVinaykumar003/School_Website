@@ -1,17 +1,38 @@
 // src/components/Navbar.js
 
-import React from "react";
+import React, { useState } from "react";
 import {
   AppBar,
   Toolbar,
   Typography,
   Button,
   Box,
-  Container,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 import { Link } from "react-router-dom";
+// import Courses from "../pages/Courses";
 
 const Navbar = () => {
+  const [aboutUsAnchorEl, setAboutUsAnchorEl] = useState(null);
+  const [academicsAnchorEl, setAcademicsAnchorEl] = useState(null);
+
+  const handleAboutUsMenuOpen = (event) => {
+    setAboutUsAnchorEl(event.currentTarget);
+  };
+
+  const handleAboutUsMenuClose = () => {
+    setAboutUsAnchorEl(null);
+  };
+
+  const handleAcademicsMenuOpen = (event) => {
+    setAcademicsAnchorEl(event.currentTarget);
+  };
+
+  const handleAcademicsMenuClose = () => {
+    setAcademicsAnchorEl(null);
+  };
+
   return (
     <AppBar position="sticky" color="primary">
       <Toolbar>
@@ -30,14 +51,52 @@ const Navbar = () => {
           >
             Home
           </Button>
+
+          {/* About Us Dropdown */}
           <Button
             color="inherit"
-            component={Link}
-            to="/achievements"
+            onClick={handleAboutUsMenuOpen}
             sx={{ marginRight: 2 }}
           >
-            Achievements
+            About Us
           </Button>
+          <Menu
+            anchorEl={aboutUsAnchorEl}
+            open={Boolean(aboutUsAnchorEl)}
+            onClose={handleAboutUsMenuClose}
+          >
+            <MenuItem component={Link} to="/mission" onClick={handleAboutUsMenuClose}>
+              Mission
+            </MenuItem>
+            <MenuItem component={Link} to="/members" onClick={handleAboutUsMenuClose}>
+              Member Of Facility
+            </MenuItem>
+            <MenuItem component={Link} to="/aboutus" onClick={handleAboutUsMenuClose}>
+              About Us
+            </MenuItem>
+          </Menu>
+
+          {/* Academics Dropdown */}
+          <Button
+            color="inherit"
+            onClick={handleAcademicsMenuOpen}
+            sx={{ marginRight: 2 }}
+          >
+            Academics
+          </Button>
+          <Menu
+            anchorEl={academicsAnchorEl}
+            open={Boolean(academicsAnchorEl)}
+            onClose={handleAcademicsMenuClose}
+          >
+            <MenuItem component={Link} to="/achivements/admission" onClick={handleAcademicsMenuClose}>
+              Admission
+            </MenuItem>
+            <MenuItem component= {Link} to="/achivements/courses" onClick={handleAcademicsMenuClose}>
+              Courses
+            </MenuItem>
+          </Menu>
+
           <Button
             color="inherit"
             component={Link}
@@ -51,16 +110,21 @@ const Navbar = () => {
             component={Link}
             to="/events"
             sx={{ marginRight: 2 }}
-          >Events
+          >
+            Events
+          </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/contact"
+            sx={{ marginRight: 2 }}
+          >
+            Contact
           </Button>
         </Box>
 
-        {/* Button for Learn More or Sign In */}
-        <Button
-          color="inherit"
-          variant="outlined"
-          sx={{ borderRadius: "20px" }}
-        >
+       {/* Admin Login Button */}
+       <Button color="inherit" variant="outlined" component={Link} to="/login" sx={{ borderRadius: "20px" }}>
           Admin Login
         </Button>
       </Toolbar>

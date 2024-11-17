@@ -1,0 +1,79 @@
+.courses-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.course-categories {
+  margin-bottom: 2rem;
+}
+
+.course-categories h3 {
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.course-categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.course-categories li {
+  padding: 0.5rem 0;
+}
+
+.course-list h3 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-top: 2rem;
+}
+
+.course-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.course-item h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.course-item p {
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.featured-courses, .faculty-intro, .enrollment-info, .resources-support, .faq, .contact-info {
+  margin-top: 2rem;
+}
+
+.featured-courses h3, .faculty-intro h3, .enrollment-info h3, .resources-support h3, .faq h3, .contact-info h3 {
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.featured-courses p, .faculty-intro p, .enrollment-info p, .resources-support p, .faq p, .contact-info p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}

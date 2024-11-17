@@ -1,16 +1,18 @@
 import React from 'react'
-import FacultyCards from '../components/faculty'
-import MissionVision from '../components/Mission'
-import Facilities from '../components/Facilities'
-import FacilitiesG from '../components/FacilitiesG'
+// import FacultyCards from '../components/faculty'
+// import MissionVision from '../components/Mission'
+// import Facilities from '../components/Facilities'
+// import FacilitiesG from '../components/FacilitiesG'
+import Carousel from '../components/Carousel'
+import NotificationPanel from '../components/NotificationPanel'
 
 const Home = () => {
   return (
     <>
-    <FacultyCards />
-    <MissionVision />
-    <Facilities />
-    <FacilitiesG />
+    <Carousel/>
+    <div>
+    <NotificationPanel/>
+    </div>
     </>
   )
 }

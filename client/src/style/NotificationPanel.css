@@ -1,0 +1,66 @@
+.notification-box {
+  position: fixed;
+  top: 10%;
+  right: 20px; /* Adjust based on your slider bar's position */
+  width: 250px;
+  height: auto;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.notification-box h4 {
+  margin: 0;
+  padding: 10px;
+  background-color: #696cff;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.notification-box ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.notification-box li {
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-box li.new {
+  background-color: #d4edda;
+}
+
+.notification-box li span {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.add-notification-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #696cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.add-notification-btn:hover {
+  background-color: #575bd8;
+}

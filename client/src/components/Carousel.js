@@ -8,11 +8,12 @@ const CarouselComponent = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/1200x400?text=Slide+1"
-          alt="First slide"
-        />
+      <img
+  className="d-block w-100"
+  src="https://images.pexels.com/photos/8467265/pexels-photo-8467265.jpeg"
+  alt="First slide"
+/>
+
         <Carousel.Caption>
           <h3>Slide 1</h3>
           <p>First Slide Description</p>
@@ -20,11 +21,12 @@ const CarouselComponent = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/1200x400?text=Slide+2"
-          alt="Second slide"
-        />
+      <img
+  className="d-block w-100"
+  src="https://images.pexels.com/photos/8363028/pexels-photo-8363028.jpeg"
+  alt="Second slide"
+/>
+ 
         <Carousel.Caption>
           <h3>Slide 2</h3>
           <p>Second Slide Description</p>
@@ -32,11 +34,12 @@ const CarouselComponent = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/1200x400?text=Slide+3"
-          alt="Third slide"
-        />
+      <img
+  className="d-block w-100"
+  src="https://images.pexels.com/photos/8465502/pexels-photo-8465502.jpeg"
+  alt="Third slide"
+/>
+
         <Carousel.Caption>
           <h3>Slide 3</h3>
           <p>Third Slide Description</p>
